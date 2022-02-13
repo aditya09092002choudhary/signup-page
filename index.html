@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internship Project</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="inner-container">
+        <div class="heading"><h1>Welcome</h1></div>
+        <div class="form-container">
+          <form action="#" class="signup-form">
+            <div class="form-element">
+              <div id="fNameMsg" class="err"></div>
+              <div class="name">
+                <div class="fName">
+                  <div class="icon"><i class="fa-solid fa-user-large"></i></div>
+                  <div class="input">
+                    <input type="text" placeholder="First Name" id="fName" onclick="clearFun()"  autocomplete="off" style="text-transform: capitalize;" required/>
+                  </div>
+                </div>
+                <div class="lName">
+                  <div class="icon"><i class="fa-solid fa-user-large"></i></div>
+                  <div class="input">
+                    <input type="text" placeholder="Last Name" autocomplete="off" style="text-transform: capitalize;"/>
+                  </div>
+                </div>
+              </div>
+              <div id="emailMsg" class="err"></div>
+              <div class="inner-element">
+                <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="input">
+                  <input type="email" placeholder="Enter Email" id="email" onclick="clearFun()" autocomplete="off" required/>
+                </div>
+              </div>
+              <div id="phoneMsg" class="err"></div>
+              <div class="inner-element">
+                <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="input">
+                  <input type="tel"  id="phone" onclick="clearFun()"  placeholder="Enter Mobile Number" autocomplete="off" required />
+                </div>
+              </div>
+              <div id="passwordMsg" class="err"></div>
+              <div class="inner-element">
+                <div class="icon"><i class="fa-solid fa-key"></i></div>
+                <div class="input">
+                  <input type="password" placeholder="Enter Password" id="password" onclick="clearFun()" required/>
+                </div>
+                <div class="icon-right" onclick="showPassword1()"><i class="fa-solid fa-eye-slash eye1" ></i></div>
+              </div>
+              <div id="confPassMsg" class="err"></div>
+              <div class="inner-element">
+                <div class="icon"><i class="fa-solid fa-key"></i></div>
+                <div class="input">
+                  <input type="password" placeholder="Confirm Password" id="conf-pass" onclick="clearFun()" required/>
+                </div>
+                <div class="icon-right" onclick="showPassword2()"><i class="fa-solid fa-eye-slash eye2" ></i></div>
+
+              </div>
+              <div id="genderMsg" class="err"></div>
+              <div class="gender">
+                <div class="male">
+                  <input type="radio" name="gender" id="male" onclick="clearFun()" /> <label for="male" required="required">Male</label> 
+                </div>
+                <div class="female">
+                  <input type="radio" name="gender" id="female" onclick="clearFun()" /> <label for="female" required ="required">Female</label>
+                </div>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" name="check" id="check"> <label for="check">Remember me</label>
+              </div>
+              <div class="button">
+                <button type="submit" onclick="validate(event)">Submit <i class="fa-solid fa-paper-plane"></i></button>
+              </div>
+            </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/2a97ce5e57.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
